@@ -4,6 +4,8 @@ class Fixnum
     (1..self).each() do |time|
       if time.%(3) == 0
         count.push("ping")
+      elsif time.%(5) == 0
+        count.push("pong")
       else
         count.push(time)
       end
